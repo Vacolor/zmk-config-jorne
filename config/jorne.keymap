@@ -59,7 +59,7 @@
    &kp LWIN &kp GRAVE &kp Q &kp W &kp E     &kp R &kp T               &kp Y &kp U &kp I  &kp O     &kp P    &kp LBKT  &kp RBKT
             &kp LALT  &kp A &kp S &kp D     &kp F &kp G               &kp H &kp J &kp K  &kp L     &kp SEMI &kp SQT
             &kp LCTRL &kp Z &kp X &kp LSHFT &kp C &kp V               &kp B &kp N &kp M  &kp COMMA &kp DOT  &kp FSLH
-                         &lt RSE TAB &mt LSHFT SPACE &lt LWR RET &lt LWR SPACE &kp BSPC &lt RSE DEL
+                         &lt RSE TAB &kp SPACE &lt LWR RET &lt LWR SPACE &kp BSPC &lt RSE DEL
                         >;
                 };
                 lower_layer {
