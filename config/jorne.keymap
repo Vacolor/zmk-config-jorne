@@ -56,12 +56,13 @@
 //        | CTRL |  Z  |  X  | SHFT|  C  |  V  |   |  B  |  N  |  M  |  ,  |  .  |  /  |
 //                           | RSE | SPC | LWR |   | LWR | BSPC| RSE |
                         bindings = <
-   &kp LWIN &kp GRAVE &kp Q &kp W &kp E    &kp R &kp T        &kp Y &kp U &kp I  &kp O     &kp P    &kp LBKT  &kp RBKT
-            &kp LALT  &kp A &kp S &kp D    &kp F &kp G        &kp H &kp J &kp K  &kp L     &kp SEMI &kp SQT
-            &kp LCTRL &kp Z &kp X &kp LSHFT &kp C &kp V        &kp B &kp N &kp M  &kp COMMA &kp DOT  &kp FSLH
-                         &lt TAB RSE &kp SPACE &lt LWR RET &lt LWR RET &kp BSPC &lt RSE DEL
+   &kp LWIN &kp GRAVE &kp Q &kp W &kp E     &kp R &kp T        &kp Y &kp U &kp I &kp O     &kp P    &kp LBKT  &kp RBKT
+            &kp LALT  &kp A &kp S &kp D     &kp F &kp G        &kp H &kp J &kp K &kp L     &kp SEMI &kp SQT
+            &kp LCTRL &kp Z &kp X &kp LSHFT &kp C &kp V        &kp B &kp N &kp M &kp COMMA &kp DOT  &kp FSLH
+                         &lt RSE TAB &kp SPACE &lt LWR RET &lt LWR RET &kp BSPC &lt RSE DEL
                         >;
                 };
+
                 lower_layer {
 // -----------------------------------------------------------------------------------------
 // |     |     |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  |  -_ |  =+ |
@@ -89,6 +90,7 @@
                                                            &trans &trans &lt ADJ RET        &lt ADJ ESC &trans &trans
                         >;
                 };
+
                 adjust_layer {
 // -----------------------------------------------------------------------------------------
 // | RST | BLDR | HI  | SI  | BI  | PI  | EF  |   |     |     |     |     |     | BLDR | RST |
