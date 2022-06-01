@@ -53,13 +53,13 @@
 // -----------------------------------------------------------------------------------------
 // |  GUI |   ~  |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  |  [  |  ]  |
 //        | LALT |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '  |
-//        | CTRL |  Z  |  X  | SHFT|  C  |  V  |   |  B  |  N   |  M  |  ,  |  .  |  /  |
-//                           | RSE | SPC | LWR |   | LWR | BKSP | RSE |
+//        | CTRL |  Z  |  X  | BKSP|  C  |  V  |   |  B  |  N   |  M  |  ,  |  .  |  /  |
+//                           | SHFT| SPC | LWR |   | LWR | BKSP | RSE |
                         bindings = <
-   &kp LWIN &kp GRAVE &kp Q &kp W &kp E     &kp R &kp T               &kp Y &kp U &kp I  &kp O     &kp P    &kp LBKT  &kp RBKT
-            &kp LALT  &kp A &kp S &kp D     &kp F &kp G               &kp H &kp J &kp K  &kp L     &kp SEMI &kp SQT
-            &kp LCTRL &kp Z &kp X &kp LSHFT &kp C &kp V               &kp B &kp N &kp M  &kp COMMA &kp DOT  &kp FSLH
-                         &lt RSE TAB &kp SPACE &lt LWR RET &lt LWR SPACE &kp BSPC &lt RSE DEL
+   &kp LWIN &kp GRAVE &kp Q &kp W &kp E    &kp R &kp T        &kp Y &kp U &kp I  &kp O     &kp P    &kp LBKT  &kp RBKT
+            &kp LALT  &kp A &kp S &kp D    &kp F &kp G        &kp H &kp J &kp K  &kp L     &kp SEMI &kp SQT
+            &kp LCTRL &kp Z &kp X &kp BSPC &kp C &kp V        &kp B &kp N &kp M  &kp COMMA &kp DOT  &kp FSLH
+                         &lt LSHFT TAB &lt RSE SPACE &lt LWR RET &lt LWR RET &kp SPACE &lt RSE DEL
                         >;
                 };
                 lower_layer {
@@ -72,7 +72,7 @@
    &none  &none     &kp N1   &kp N2 &kp N3   &kp N4   &kp N5           &kp N6    &kp N7   &kp N8   &kp N9   &kp N0   &kp MINUS    &kp EQUAL    
           &kp MINUS &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT        &kp CARET &kp AMPS &kp STAR &kp LPAR &kp RPAR &kp EQUAL
           &kp F1    &kp F2   &kp F3 &kp F4   &kp F5   &kp F6           &kp F7    &kp F8   &kp F9   &kp F10  &kp F11  &kp F12
-                                    &lt ADJ TAB &trans &trans          &trans &trans &lt ADJ DEL
+                                    &lt ADJ TAB &trans &trans          &trans &kp ESC &lt ADJ DEL
                         >;
                 };
 
