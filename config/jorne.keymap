@@ -51,15 +51,15 @@
 
                 default_layer {
 // -----------------------------------------------------------------------------------------
-// |  GUI |   ~  |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  |  [  |  ]  |
-//        | LALT |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '  |
-//        | CTRL |  Z  |  X  | BKSP|  C  |  V  |   |  B  |  N   |  M  |  ,  |  .  |  /  |
-//                           | SHFT| SPC | LWR |   | LWR | BKSP | RSE |
+// |  GUI |   ~  |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U  |  I  |  O  |  P  |  [  |  ]  |
+//        | LALT |  A  |  S  |  D  |  F  |  G  |   |  H  |  J  |  K  |  L  |  ;  |  '  |
+//        | CTRL |  Z  |  X  | SHFT|  C  |  V  |   |  B  |  N  |  M  |  ,  |  .  |  /  |
+//                           | RSE | SPC | LWR |   | LWR | BSPC| RSE |
                         bindings = <
    &kp LWIN &kp GRAVE &kp Q &kp W &kp E    &kp R &kp T        &kp Y &kp U &kp I  &kp O     &kp P    &kp LBKT  &kp RBKT
             &kp LALT  &kp A &kp S &kp D    &kp F &kp G        &kp H &kp J &kp K  &kp L     &kp SEMI &kp SQT
-            &kp LCTRL &kp Z &kp X &kp BSPC &kp C &kp V        &kp B &kp N &kp M  &kp COMMA &kp DOT  &kp FSLH
-                         &lt LSHFT TAB &lt RSE SPACE &lt LWR RET &lt LWR RET &kp SPACE &lt RSE DEL
+            &kp LCTRL &kp Z &kp X &kp LSHFT &kp C &kp V        &kp B &kp N &kp M  &kp COMMA &kp DOT  &kp FSLH
+                         &lt TAB RSE &kp SPACE &lt LWR RET &lt LWR RET &kp BSPC &lt RSE DEL
                         >;
                 };
                 lower_layer {
