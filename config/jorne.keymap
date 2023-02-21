@@ -104,5 +104,5 @@
                                                                     &trans &rgb_ug RGB_TOG &trans   &trans &out OUT_TOG &trans
                         >;
                 };
-VE
+        };
 };
