@@ -21,7 +21,7 @@
 	/* Cannot be used together with i2c0. */
 	status = "okay";
 	mosi-pin = <6>;
-	// Unused pins, needed for SPI definition, but not used by the ws2812 driver itself.
+	// Unused pins, needed for SPI definition, but not used by the ws2812 dri r itself.
 	sck-pin = <5>;
 	miso-pin = <7>;
 
@@ -51,43 +51,43 @@
 
                 default_layer {
 // -----------------------------------------------------------------------------------------
-// |  GUI |   ~  |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U  |  I  |  O  |  P  |  [  |  ]  |
-//        | LALT |  A  |  S  |  D  |  F  |  G  |   |  H  |  J  |  K  |  L  |  ;  |  '  |
-//        | CTRL |  Z  |  X  | SHFT|  C  |  V  |   |  B  |  N  |  M  |  ,  |  .  |  /  |
-//                           | RSE | SPC | LWR |   | LWR | BKSP| RSE |
+// | SHFT |   ~  |  Q  |  W  |  E  |  R      |  T      |   |  Y       |  U  |  I      |  O  |  P  |  [  |  ]  |
+//        | CTRL |  A  |  S  |  D  |  F      |  G      |   |  H       |  J  |  K      |  L  |  ;  |  '  |
+//        |  GUI |  Z  |  X  |  C  |  V      |  B      |   |  B       |  N  |  M      |  ,  |  .  |  /  |
+//                           | ALT | SPC/RSE | RET/LWR |   | BKSP/RSE | SPC | DEL/LWR |
                         bindings = <
-   &kp LWIN &kp GRAVE &kp Q &kp W &kp E     &kp R &kp T         &kp Y &kp U &kp I &kp O     &kp P    &kp LBKT &kp RBKT
-            &kp LALT  &kp A &kp S &kp D     &kp F &kp G         &kp H &kp J &kp K &kp L     &kp SEMI &kp SQT
-            &kp LCTRL &kp Z &kp X &kp LSHFT &kp C &kp V         &kp B &kp N &kp M &kp COMMA &kp DOT  &kp FSLH 
-                         &lt RSE TAB &mt LSHFT SPACE &lt LWR RET &lt LWR RET &kp BSPC &lt RSE DEL
+   &kp LSHFT &kp GRAVE &kp Q  &kp W  &kp E  &kp R  &kp T     &kp Y  &kp U  &kp I  &kp O      &kp P    &kp LBKT &kp RBKT
+             &kp LCTRL &kp A  &kp S  &kp D  &kp F  &kp G     &kp H  &kp J  &kp K  &kp L      &kp SEMI &kp SQT
+             &kp LWIN  &kp Z  &kp X  &kp C  &kp V  &kp B     &kp B  &kp N  &kp M  &kp COMMA  &kp DOT  &kp FSLH 
+                    &kp LALT  &lt RSE SPACE  &lt LWR RET     &lt RSE BKSP  &kp SPACE  &lt LWR DEL
                         >;
                 };
 		
                 lower_layer {
 // -----------------------------------------------------------------------------------------
-// |     |  _  |  F1 |  F2 |  F3 |  F4 |  F5 |   |  F6 |  F7 |  F8 |  F9 | F10 | F11 | F12 |
-//       |  +  |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  |  -  |
-//       |  =  |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  |     |
-//                    | GUI |     | SPC |   | ENT |     | ALT |
+// | CAPS|     |  F1 |  F2 |  F3 |  F4 |  F5 |   |  F6 |  F7 |  F8 |  F9 | F10 | F11 | F12 |
+//       |     |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  |  -  |
+//       |     |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  |     |
+//                         | ADJ |     |     |   | ADJ |     |     |
                         bindings = <
-   &trans &kp UNDER      &kp F1   &kp F2 &kp F3   &kp F4   &kp F5      &kp F6    &kp F7   &kp F8   &kp F9   &kp F10  &kp F11 &kp F12
-          &kp PLUS  &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT        &kp CARET &kp AMPS &kp STAR &kp LPAR &kp RPAR &kp MINUS
-          &kp EQUAL &kp N1   &kp N2 &kp N3   &kp N4   &kp N5           &kp N6    &kp N7   &kp N8   &kp N9   &kp N0   &trans
-                                              &lt ADJ TAB &trans &trans   &trans &trans &lt ADJ DEL
+   &kp CAPS  &trans &kp F1   &kp F2 &kp F3   &kp F4   &kp F5       &kp F6    &kp F7   &kp F8   &kp F9   &kp F10  &kp F11 &kp F12
+             &trans &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT    &kp CARET &kp AMPS &kp STAR &kp LPAR &kp RPAR &kp MINUS
+             &trans &kp N1   &kp N2  &kp N3  &kp N4  &kp N5        &kp N6    &kp N7   &kp N8   &kp N9   &kp N0   &trans
+                                 &lt ADJ TAB &trans &trans         &lt ADJ DEL  &trans &trans 
                         >;
                 };
 
                 raise_layer {
 // -----------------------------------------------------------------------------------------
-// |     | NMLK |  /  |  7  |  8  |  9  |  -  |   | VOLU| HOME|  UP | END | SCLK| CLCK|     |
-//       |      |  *  |  4  |  5  |  6  |  +  |   | MUT | LEFT| DOWN| RGHT| INS | APP |
-//       | CRTL |  0  |  1  |  2  |  3  |  .  |   | VOLD| PGUP| ESC | PGDN| PAUS|     |
-//                          |     |     | ADJ |   | ADJ |     |     |
+// | SFHT| MUT |     |     |     |     |     |   |     | HOME|  UP     | END |     |  -  |  =  |
+//       |     |     | SHFT| CTRL| BKSP|     |   |     | LEFT| DOWN    | RGHT|     | APP |
+//       |     |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8      |  9  |  0  |     |
+//                         | ADJ |     |     |   |     | RET | DEL/ADJ |
                         bindings = <
-   &trans &kp KP_NUM &kp KP_SLASH    &kp KP_N7 &kp KP_N8 &kp KP_N9 &kp KP_MINUS        &kp C_VOL_UP &kp HOME  &kp UP   &kp END   &kp SLCK        &kp CAPS  &trans
-          &kp EQUAL  &kp KP_MULTIPLY &kp KP_N4 &kp KP_N5 &kp KP_N6 &kp KP_PLUS         &kp C_MUTE   &kp LEFT  &kp DOWN &kp RIGHT &kp INS         &kp K_APP
-          &trans     &kp KP_N0       &kp KP_N1 &kp KP_N2 &kp KP_N3 &kp KP_DOT          &kp C_VOL_DN &kp PG_UP &kp ESC  &kp PG_DN &kp PAUSE_BREAK &trans
-                                                           &trans &trans &lt ADJ RET   &lt ADJ ESC &trans &trans
+   &kp LSHFT  &kp C_MUTE &trans  &trans     &trans     &trans    &trans      &trans  &kp HOME  &kp UP    &kp END    &trans &kp MINUS  &kp EQUAL
+              &trans     &trans  &kp LSHFT  &kp LCTRL  &kp BKSP  &trans      &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans &kp K_APP
+              &trans     &kp N1  &kp N2     &kp N3     &kp N4    &kp N5      &kp N6  &kp N7    &kp N8    &kp N9     &kp N0 &trans
+                                             &lt ADJ ESC  &trans &trans      &trans  &kp RET   &lt ADJ DEL
                         >;
                 };
 		
@@ -104,5 +104,5 @@
                                                                     &trans &rgb_ug RGB_TOG &trans   &trans &out OUT_TOG &trans
                         >;
                 };
-        };
+VE
 };
